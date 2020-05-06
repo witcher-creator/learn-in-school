@@ -1,0 +1,10 @@
+D:\Works\learn-in-school\Winform\DemoApp\DemoApp\bin\Debug\DemoApp.exe.config
+D:\Works\learn-in-school\Winform\DemoApp\DemoApp\bin\Debug\DemoApp.exe
+D:\Works\learn-in-school\Winform\DemoApp\DemoApp\bin\Debug\DemoApp.pdb
+D:\Works\learn-in-school\Winform\DemoApp\DemoApp\obj\Debug\DemoApp.csprojAssemblyReference.cache
+D:\Works\learn-in-school\Winform\DemoApp\DemoApp\obj\Debug\DemoApp.Form1.resources
+D:\Works\learn-in-school\Winform\DemoApp\DemoApp\obj\Debug\DemoApp.Properties.Resources.resources
+D:\Works\learn-in-school\Winform\DemoApp\DemoApp\obj\Debug\DemoApp.csproj.GenerateResource.cache
+D:\Works\learn-in-school\Winform\DemoApp\DemoApp\obj\Debug\DemoApp.csproj.CoreCompileInputs.cache
+D:\Works\learn-in-school\Winform\DemoApp\DemoApp\obj\Debug\DemoApp.exe
+D:\Works\learn-in-school\Winform\DemoApp\DemoApp\obj\Debug\DemoApp.pdb
