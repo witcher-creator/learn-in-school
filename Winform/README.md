@@ -1,0 +1,1 @@
+# Winform - khá dễ và đơn giản nếu biết c# và hướng đối tượng
