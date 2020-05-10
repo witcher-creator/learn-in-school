@@ -15,13 +15,13 @@ Biết mới làm mấy bài dưới được
         - 1 $\Rightarrow$ số âm;
     2. mã lệch $e$ của phần mũ $E$:  **$E = e - b$**
         Trong đó, **$b$** là độ lệch (bias):
-            - Dạng 32b: $b=127$, hay $E=e-127$
-            - Dạng 64b: $b=1023$, hay $E=e-1023$
-            - Dạng 80b: $b=16383$, hay $E=e-16383$
+        - Dạng 32b: $b=127$, hay $E=e-127$
+        - Dạng 64b: $b=1023$, hay $E=e-1023$
+        - Dạng 80b: $b=16383$, hay $E=e-16383$
     3. phần lẻ $m$ của phần định trị $M$: **$M=1.m$** (cũng là **$1,m$**)
 
 - Công thức xác định giá trị của số thực $X$ tương ứng là:
-$$X=(-1)^s \times 1.m \times 2^{e-b}, \textrm{ với $\times$ là dấu nhân}$$
+$$X=(-1)^s \times 1.m \times 2^{e-b}, \textrm{ với } $\times$ \textrm{ là dấu nhân}$$
 
 
 
