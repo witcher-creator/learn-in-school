@@ -21,7 +21,7 @@ Biết mới làm mấy bài dưới được
     3. phần lẻ $m$ của phần định trị $M$: **$M=1.m$** (cũng là **$1,m$**)
 
 - Công thức xác định giá trị của số thực $X$ tương ứng là:
-$$X=(-1)^s \times 1.m \times 2^{e-b}, \textrm{ với } $\times$ \textrm{ là dấu nhân}$$
+$$X=(-1)^s \times 1.m \times 2^{e-b}, \textrm{ với } \times \textrm{ là dấu nhân}$$
 
 
 
