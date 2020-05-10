@@ -66,6 +66,32 @@ Và: vì $z$ là số âm nên giá trị thực của $z$ là : `-1180.6875`.
 5. Viết chương trình nhập vào chuỗi $32 \ bit(64 \ bit)$ lưu trữ của số thực $z$, tính và xuất ra giá trị $z$ (hệ $dec$).
 ----------------------
 6. Cho số thực $z=-1400.9375$. Xác định biểu diễn nhị phân của $z$ biết $z$ là kiểu $float \ 32 \ bit$ ($z$ là kiểu $float \ 64 \ bit$).
+#### Giải
+1. Kiểu $float \ 32 \ b$: `1b s|8b e|23b m`
+
+    - $z$ là số âm $\rightarrow s = 1$
+    - phần nguyên: $1400 = 10101111000_2$
+    - phần thập phân: $0.9375 = 0.1111_2$
+Vậy, $1400.9375 = 10101111000.1111 = 1.01011110001111 \times 10^{10}_{2} = 1.01011110001111 \times 2^{10}$ 
+$\rightarrow m = 01011110001111000000000$ (bù vào vài số $0$ cho đủ $23b$)
+    - phần mũ: $E=10$, mà $E = e -127$ (do b = 32 bit) $\rightarrow e = 10 + 127 = 137 = 10001001_2$
+
+> Vì $10_2 = 2$ nên $10^3_2 = 2^3_{10}$
+
+vậy số thực $z = 11000100101011110001111000000000_2$.
+
+2. Kiểu $float \ 64 \ b$: `1b s|11b e|52b m`;
+
+    - $z$ là số âm $\rightarrow s = 1$
+    - phần nguyên: $1400 = 10101111000_2$
+    - phần thập phân: $0.9375 = 0.1111_2$
+Vậy, $1400.9375 = 10101111000.1111 = 1.01011110001111 \times 10^{10}_{2} = 1.01011110001111 \times 2^{10}$ 
+$\rightarrow m = 0101111000111100000000000000000000000000000000000000$ (bù vào vài số $0$ cho đủ $52b$)
+    - phần mũ: $E=10$, mà $E = e - 1023$ (do b = 64 bit) $\rightarrow e = 10 + 1023 = 1033 = 10000001001_2$
+
+vậy số thực $z = 1100000010010101111000111100000000000000000000000000000000000000_2$.
+
+
 ----------------------
 7. Viết chương trình nhập vào số thực $z$, tính và in ra chuỗi $32 \ bit(64 \ bit)$ lưu trữ của số thực $z$.
 ----
