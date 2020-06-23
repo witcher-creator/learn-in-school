@@ -13,8 +13,7 @@ include "emu8086.inc"
     mov ax, a
 while:
     cmp ax,b
-    
-    jb endw  
+    jb endw  ; nhay neu duoi
     
     inc cx
     sub ax,b
