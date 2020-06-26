@@ -21,45 +21,43 @@ void Nhap(string &S, string &x_1, string &x_2){
 	cout<<"Nhap tham so x_2: ";cin>>x_2;
 }
 
-int TimCoSo(string S, string x_1, string x_2){
-	int r=0;
-	
-	//tim so chu so lon nhat
-	int soChuSo = S.length();
-	if(soChuSo < x_1.length()){
-		soChuSo = x_1.length();
-		if(soChuSo < x_2.length())
-			soChuSo = x_2.length();
-	}
-	
-	int phuongTrinh[soChuSo];
-	
-	
-	
-	//Theo vieta: x_1 + x_2 = -S;
-	
-	// \sum_{i=1} (X_1_i + X_2_i -S_i).r^{i-1}
-	for(int i=soChuSo-1; i>0;i--){	
-		phuongTrinh[i]= -S[i] + x_1[i] + x_2[i];
-	}
-	
-	for(int i=0;i<soChuSo;i++){
-		cout<<phuongTrinh[i]<<" + ";
+// Bài 7
+string ConvertDec2Bin(int temp){
+	string result="";
+	int i = temp;
+	do{
+		result = to_string(i%2) + result;
+		cout<<to_string(i%2)<<endl;
+		i/=2;
+	}while(i>0);
+    return result;
+}
+
+
+//Nhap so thuc z
+void NhapSoThuc(float &z){
+	cout<<"Nhap so thuc z: ";cin>>z;
+}
+
+string ConvertFloat2Bin(float z){
+	string result;
+
+	//dau
+	if(z>=0)
+		result="0";
+	else
+		result="1";
+	//ma lech e
+	if(z>1){
+		result+=ConvertDec2Bin(int(z));
+		cout<<result;
 	}
 	
 }
 
-/*asset
-	string demo="12345678";
-    for(int i = demo.length()-1; i>=0; i--){
-    	cout<<demo[i]<<".r^"<<demo.length()-1-i<<"+";
-	}
-*/
-
 int main(){
-    string S, x_1, x_2;
-    Nhap(S,x_1,x_2);
-    TimCoSo(S,x_1,x_2);
-    
+    float z;
+    NhapSoThuc(z);
+    ConvertFloat2Bin(z);
     return 0;
 }

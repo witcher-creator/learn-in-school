@@ -1,9 +1,0 @@
-D:\Works\learn-in-school\Winform\sv_018101027\sv_018101027\bin\Debug\sv_018101027.exe
-D:\Works\learn-in-school\Winform\sv_018101027\sv_018101027\bin\Debug\sv_018101027.pdb
-D:\Works\learn-in-school\Winform\sv_018101027\sv_018101027\obj\Debug\sv_018101027.csprojAssemblyReference.cache
-D:\Works\learn-in-school\Winform\sv_018101027\sv_018101027\obj\Debug\sv_018101027.Properties.Resources.resources
-D:\Works\learn-in-school\Winform\sv_018101027\sv_018101027\obj\Debug\sv_018101027.csproj.GenerateResource.cache
-D:\Works\learn-in-school\Winform\sv_018101027\sv_018101027\obj\Debug\sv_018101027.csproj.CoreCompileInputs.cache
-D:\Works\learn-in-school\Winform\sv_018101027\sv_018101027\obj\Debug\sv_018101027.exe
-D:\Works\learn-in-school\Winform\sv_018101027\sv_018101027\obj\Debug\sv_018101027.pdb
-D:\Works\learn-in-school\Winform\sv_018101027\sv_018101027\obj\Debug\sv_018101027.Form_vd_04.resources

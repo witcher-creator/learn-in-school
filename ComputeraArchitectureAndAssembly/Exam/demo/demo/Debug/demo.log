@@ -1,0 +1,3 @@
+﻿  demo.cpp
+d:\works\learn-in-school\computeraarchitectureandassembly\exam\demo\demo\demo.cpp(7): warning C4244: 'initializing': conversion from 'float' to 'int', possible loss of data
+  demo.vcxproj -> D:\Works\learn-in-school\ComputeraArchitectureAndAssembly\Exam\demo\Debug\demo.exe
