@@ -1,37 +1,35 @@
+; s(n) = 1 + (1+2) + (1+2+3) + ....
+
+; b1: dat ax = 0; bx = 0, cx = 1 
+; b2: ss bx vs n, if cx > n -> b4; else -> b3
+; b3: bx+=cx, ax+=bx, cx++, ->b3
+; b4: xuat ra kq 
+
 include "emu8086.inc"
-
-; S(n) = 1 + (1+2) + (1+2+3) + ...
-
 .model small
 .stack
-.data
+.data 
+    kq dw ?
     n dw 3
-    s dw ? ; ket qua
 .code
     mov ax, @data
-    mov ds, ax      
+    mov ds, ax
     
     mov ax, 0
     mov bx, 0
-    mov cx, 0
+    mov cx, 1
+    
     while:
-        cmp ax, n ; so sanh ax vs n
-        ja endw   ; neu ax > n thi endw
+        cmp cx, n
+        ja endw
+        add bx, cx
         add ax, bx
-        inc bx
-        add cx , ax
-        jmp while
+        inc cx
+        jmp while:
     endw:
-        mov s, cx
-        mov ax, s
-        
+        mov kq, ax
         call print_num_uns
-        
         mov ah, 4ch
         int 21h
         define_print_num_uns
-end
-    
-            
-        
-
+    end
