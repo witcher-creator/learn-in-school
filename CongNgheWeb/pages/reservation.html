@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html>
+    <head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+		<title>Vietnamfood</title>
+		<link rel="shortcut icon" href="../img/favicon/favicon.svg" type="image/x-icon">
+    	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+		<link rel="stylesheet" href="../styles.css">
+		<link href="https://fonts.googleapis.com/css?family=Dancing+Script:400,700" rel="stylesheet">
+    </head>
+    <body>
+        <!-- header with navigation bar -->
+		<header>
+			<nav class="navbar navbar-expand-lg fixed-top navbar-dark bg-dark px-md-5">
+				<a href="../index.html" class="navbar-brand" style="color:#6bb700; font-family:'Dancing Script', cursive;; font-size: 35px;">Vietnamfood</a>
+				<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarHeaderToggler" aria-controls="navbarHeaderToggler" aria-expanded="false" aria-label="Toggle navigation">
+					<span class="navbar-toggler-icon"></span>
+				</button>
+
+				<div class="collapse navbar-collapse" id="navbarHeaderToggler">
+					<ul class="navbar-nav ml-auto">
+						<hr class="clearfix w-100 d-md-none" style="border-top: 1px solid whitesmoke;">
+                        <li>
+							<a class="nav-link header-nav-link" href="../index.html#gioithieu">Giới thiệu</a>
+						</li>
+						
+						<li class="nav-item">
+							<a class="nav-link header-nav-link" href="../index.html#congthuc">Công thức</a>
+						</li>
+
+						<li class="nav-item">
+							<a class="nav-link header-nav-link" href="../index.html#reservation">Đặt bàn</a>
+						</li>
+
+						<li class="nav-item">
+							<a class="nav-link header-nav-link" href="../index.html#lienhe">Liên hệ</a>
+						</li>
+						<hr class="clearfix w-100 d-md-none" style="border-top: 1px solid whitesmoke;">
+					</ul>
+				</div>
+			</nav>
+        </header>
+        <!-- wallpaper -->
+		<div class="wallpage">
+			<div class="center" style="font-size: 2vw;">
+				<p style="font-family:'Dancing Script', cursive; font-size: 10vw;">Vietnamfood</p>
+				<p>CAFÉ / RESTAURANT</p>
+			</div>
+        </div>
+        
+        <div class="container-fluid py-3">
+            <div class="py-2" style="text-align: center;">
+                <button class="btn btn-outline-info" onclick="showData()">Kiểm tra</button>
+            </div>
+            <div id="reservation-list" class="col-md-6 offset-md-3"></div>
+            
+              
+        </div>
+		<!-- Footer -->
+		<footer id="lienhe" class="pt-4 footer">
+			<!-- Footer Links -->
+			<div class="container-fluid text-center text-md-left ">
+		
+			<!-- Grid row -->
+			<div class="row justify-content-sm-center">
+		
+				<!-- Grid column -->
+				<div class="col-sm-3 col-md-3 mt-md-0 mt-3 offset-md-2 ">
+		
+				<!-- Content -->
+				<h6 class="text-uppercase" style="color: yellow;">About us</h6>
+				<p style="font-size: smaller;">
+					Lê Trần Phi Nhung <br>
+					Trần Võ Minh Tường <br>
+					Nguyễn Ngọc Minh Yến <br>
+					Đặng Hữu Lộc
+				</p>
+			
+				</div>
+				<!-- Grid column -->
+		
+				<hr class="clearfix w-100 d-md-none" style="border-top: 1px solid white;">
+		
+				<!-- Grid column -->
+				<div class="col-sm-4 col-md-4 mb-md-0 mb-3">
+		
+				<!-- Links -->
+				<h6 class="text-uppercase">CONTACT INFO</h6>
+				<p style="font-size: smaller;">
+					<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="black" width="18px" height="18px"><path d="M0 0h24v24H0z" fill="none"/><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"/></svg>
+					Long Tuong, Long An, Chau Thanh, Tien Giang <br>
+					
+					<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="black" width="18px" height="18px"><path d="M0 0h24v24H0z" fill="none"/><path d="M6.62 10.79c1.44 2.83 3.76 5.14 6.59 6.59l2.2-2.2c.27-.27.67-.36 1.02-.24 1.12.37 2.33.57 3.57.57.55 0 1 .45 1 1V20c0 .55-.45 1-1 1-9.39 0-17-7.61-17-17 0-.55.45-1 1-1h3.5c.55 0 1 .45 1 1 0 1.25.2 2.45.57 3.57.11.35.03.74-.25 1.02l-2.2 2.2z"/></svg>
+					+84 334544884 <br>
+
+					<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="black" width="18px" height="18px"><path d="M0 0h24v24H0z" fill="none"/><path d="M20 4H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z"/></svg>
+					admin@domain.com
+				</p>
+		
+				</div>
+				<!-- Grid column -->		
+			</div>
+			<!-- Grid row -->
+		
+			</div>
+			<!-- Footer Links -->
+			<div class="footer-link text-center">
+				<a href="http://facebook.com">
+					<svg height="25pt" viewBox="-21 -21 700 700" width="25pt" xmlns="http://www.w3.org/2000/svg"><path d="m604.671875 0h-569.375c-19.496094.0117188-35.30078125 15.824219-35.296875 35.328125v569.375c.0117188 19.496094 15.824219 35.300781 35.328125 35.296875h306.546875v-247.5h-83.125v-96.875h83.125v-71.292969c0-82.675781 50.472656-127.675781 124.222656-127.675781 35.324219 0 65.679688 2.632812 74.527344 3.808594v86.410156h-50.855469c-40.125 0-47.894531 19.066406-47.894531 47.050781v61.699219h95.9375l-12.5 96.875h-83.4375v247.5h162.796875c19.507813.003906 35.324219-15.804688 35.328125-35.3125 0-.003906 0-.007812 0-.015625v-569.375c-.007812-19.496094-15.824219-35.30078125-35.328125-35.296875zm0 0"/></svg>
+				</a>
+				<svg fill="#000000" xmlns="http://www.w3.org/2000/svg" viewBox="0 2 47 47" width="25pt" height="25pt"><path d="M 9 4 C 6.2504839 4 4 6.2504839 4 9 L 4 41 C 4 43.749516 6.2504839 46 9 46 L 41 46 C 43.749516 46 46 43.749516 46 41 L 46 9 C 46 6.2504839 43.749516 4 41 4 L 9 4 z M 9 6 L 15.580078 6 C 12.00899 9.7156859 10 14.518083 10 19.5 C 10 24.66 12.110156 29.599844 15.910156 33.339844 C 16.030156 33.549844 16.129922 34.579531 15.669922 35.769531 C 15.379922 36.519531 14.799687 37.499141 13.679688 37.869141 C 13.249688 38.009141 12.97 38.430859 13 38.880859 C 13.03 39.330859 13.360781 39.710781 13.800781 39.800781 C 16.670781 40.370781 18.529297 39.510078 20.029297 38.830078 C 21.379297 38.210078 22.270625 37.789609 23.640625 38.349609 C 26.440625 39.439609 29.42 40 32.5 40 C 36.593685 40 40.531459 39.000731 44 37.113281 L 44 41 C 44 42.668484 42.668484 44 41 44 L 9 44 C 7.3315161 44 6 42.668484 6 41 L 6 9 C 6 7.3315161 7.3315161 6 9 6 z M 33 15 C 33.55 15 34 15.45 34 16 L 34 25 C 34 25.55 33.55 26 33 26 C 32.45 26 32 25.55 32 25 L 32 16 C 32 15.45 32.45 15 33 15 z M 18 16 L 23 16 C 23.36 16 23.700859 16.199531 23.880859 16.519531 C 24.050859 16.829531 24.039609 17.219297 23.849609 17.529297 L 19.800781 24 L 23 24 C 23.55 24 24 24.45 24 25 C 24 25.55 23.55 26 23 26 L 18 26 C 17.64 26 17.299141 25.800469 17.119141 25.480469 C 16.949141 25.170469 16.960391 24.780703 17.150391 24.470703 L 21.199219 18 L 18 18 C 17.45 18 17 17.55 17 17 C 17 16.45 17.45 16 18 16 z M 27.5 19 C 28.11 19 28.679453 19.169219 29.189453 19.449219 C 29.369453 19.189219 29.65 19 30 19 C 30.55 19 31 19.45 31 20 L 31 25 C 31 25.55 30.55 26 30 26 C 29.65 26 29.369453 25.810781 29.189453 25.550781 C 28.679453 25.830781 28.11 26 27.5 26 C 25.57 26 24 24.43 24 22.5 C 24 20.57 25.57 19 27.5 19 z M 38.5 19 C 40.43 19 42 20.57 42 22.5 C 42 24.43 40.43 26 38.5 26 C 36.57 26 35 24.43 35 22.5 C 35 20.57 36.57 19 38.5 19 z M 27.5 21 C 27.39625 21 27.29502 21.011309 27.197266 21.03125 C 27.001758 21.071133 26.819727 21.148164 26.660156 21.255859 C 26.500586 21.363555 26.363555 21.500586 26.255859 21.660156 C 26.148164 21.819727 26.071133 22.001758 26.03125 22.197266 C 26.011309 22.29502 26 22.39625 26 22.5 C 26 22.60375 26.011309 22.70498 26.03125 22.802734 C 26.051191 22.900488 26.079297 22.994219 26.117188 23.083984 C 26.155078 23.17375 26.202012 23.260059 26.255859 23.339844 C 26.309707 23.419629 26.371641 23.492734 26.439453 23.560547 C 26.507266 23.628359 26.580371 23.690293 26.660156 23.744141 C 26.819727 23.851836 27.001758 23.928867 27.197266 23.96875 C 27.29502 23.988691 27.39625 24 27.5 24 C 27.60375 24 27.70498 23.988691 27.802734 23.96875 C 28.487012 23.82916 29 23.22625 29 22.5 C 29 21.67 28.33 21 27.5 21 z M 38.5 21 C 38.39625 21 38.29502 21.011309 38.197266 21.03125 C 38.099512 21.051191 38.005781 21.079297 37.916016 21.117188 C 37.82625 21.155078 37.739941 21.202012 37.660156 21.255859 C 37.580371 21.309707 37.507266 21.371641 37.439453 21.439453 C 37.303828 21.575078 37.192969 21.736484 37.117188 21.916016 C 37.079297 22.005781 37.051191 22.099512 37.03125 22.197266 C 37.011309 22.29502 37 22.39625 37 22.5 C 37 22.60375 37.011309 22.70498 37.03125 22.802734 C 37.051191 22.900488 37.079297 22.994219 37.117188 23.083984 C 37.155078 23.17375 37.202012 23.260059 37.255859 23.339844 C 37.309707 23.419629 37.371641 23.492734 37.439453 23.560547 C 37.507266 23.628359 37.580371 23.690293 37.660156 23.744141 C 37.739941 23.797988 37.82625 23.844922 37.916016 23.882812 C 38.005781 23.920703 38.099512 23.948809 38.197266 23.96875 C 38.29502 23.988691 38.39625 24 38.5 24 C 38.60375 24 38.70498 23.988691 38.802734 23.96875 C 39.487012 23.82916 40 23.22625 40 22.5 C 40 21.67 39.33 21 38.5 21 z"/></svg>
+			</div>
+			<!-- Footer Links -->
+
+			<!-- Copyright -->
+			<div class="footer-copyright text-center py-3">© 2020 Vietnamfood: Chưa đăng ký bản quyền
+			</div>
+			<!-- Copyright -->
+		
+		</footer>
+		<!-- Footer -->
+
+		<!-- JS, Popper.js, and jQuery -->
+		<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+		<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+		<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+		<script src="../main.js"></script>
+	</body>
+</html>
