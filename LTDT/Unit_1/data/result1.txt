@@ -1,0 +1,12 @@
+8
+0 1 1 0 0 0 0 0 
+1 0 1 1 1 0 0 0 
+1 1 0 1 0 0 0 0 
+0 1 1 0 1 0 0 0 
+0 1 0 1 0 0 0 1 
+0 0 0 0 0 0 0 1 
+0 0 0 0 0 0 0 1 
+0 0 0 0 1 1 1 0 
+Dinh co bac nho nhat: 2
+Dinh co bac cao nhat: 5
+Ma tran vo huong
