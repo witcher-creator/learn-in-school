@@ -1,12 +1,10 @@
 #include <iostream>
 #include <fstream>
 #include <string>
-
+using namespace std;
 // ========================================= data =========================================
 
 const int MAX = 50;
-
-using namespace std;
 
 struct GRAPH {
   int n;
@@ -121,10 +119,12 @@ int* check_connected_graph(GRAPH g){
     labels[i] = 0;
   }
   
+  int max = 0;
+
   // draw graph
   for (int i = 0; i < g.n; i++)
   {
-    bool is_con_greater = false;
+    // bool is_con_greater = false;
     for (int j = 0; j < g.n; j++)
     {
       if(g.values[i][j] == 1){
@@ -133,11 +133,16 @@ int* check_connected_graph(GRAPH g){
         if(labels[j] == 0)
           labels[j] = base; 
         if(j>i){
-          is_con_greater = true;
+          // is_con_greater = true;
+          if(max < j)
+            max = j;
         }
       }
     }
-    if(!is_con_greater){
+    // if(!is_con_greater && i<=max){
+      // base++;
+    // }
+    if(i+1>max){
       base++;
     }
   }
@@ -149,7 +154,7 @@ int* check_connected_graph(GRAPH g){
 
 // read file
 void read_file(string filename, GRAPH &l){
-  std::ifstream file(filename);
+  ifstream file(filename);
 
   int x; // store value in point
 
@@ -196,7 +201,7 @@ void write_file(string filename, GRAPH g){
 
 int main() {
   string filename;
-  filename = "data\\graph_connected1.txt";
+  filename = "data\\graph4.txt";
 
 
   GRAPH g;
